@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity,Inheritance,Cascade,important</title>
+    <style>
+        /* Specificity */
+        h1
+        {
+            color: blue;
+        }
+        .heading
+        {
+            color: purple;
+        }
+        #title
+        {
+            color: red;
+        }
+
+        h2
+        {
+            color:coral
+        }
+        #text
+        {
+            color: crimson;
+        }
+
+
+        /* Inheritance */
+        div
+        {
+            color:magenta;
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* cascade */
+        .heading4
+        {
+            color:purple;
+        }
+        .heading4
+        {
+            color:yellow;
+        }
+        .heading4
+        {
+            color: red;
+        }
+
+
+        /* !important */
+        #text1
+        {
+            color: blue!important;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading" id="title">Hello Welcome to the Beautiful World!</h1>
+
+    <h2 id="text" style="color:green;">Hello Welcome to the Wonderful World!</h2>
+
+    <div>
+        <h3>Hello Welcome to the fantastic World!</h3>
+        <p>Hello Welcome to the fantastic World!</p>
+    </div>
+
+
+    <h4 class="heading4">Hello My Beautiful Earth!</h4>
+
+    <h5 id="text1" style="color: green;">Hello My Beautiful India!</h5>
+</body>
+</html>
