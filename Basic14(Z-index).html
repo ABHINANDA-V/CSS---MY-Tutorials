@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index</title>
+    <style>
+        .box
+        {
+            width: 150px;
+            height: 150px;
+            position: absolute;
+        }
+        .red
+        {
+            background-color: red;
+            z-index: 1;
+        }
+        .blue
+        {
+            background-color: blue;
+            left:80px;
+            top:80px;
+            z-index: 2;
+        }
+        .green
+        {
+            background-color: green;
+            z-index: 3;
+            left:150px;
+            top:150px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box red">
+        <h1>Box 1</h1>
+    </div>
+    <div class="box blue">
+        <h1>Box 2</h1>
+    </div>
+    <div class="box green">
+        <h1>Box 3</h1>
+    </div>
+</body>
+</html>

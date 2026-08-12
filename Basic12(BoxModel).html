@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        /* Default - box-sizing */
+        .div1
+        {
+            box-sizing: content-box; 
+            width: 200px;
+            height: 200px;
+            border: 2px solid red;
+            padding:50px;
+            margin:20px
+        }
+        .div2
+        {
+            box-sizing: border-box;
+            width:200px;
+            height: 200px;
+            border: 2px solid red;
+            padding: 50px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <h1>Hello World!</h1>
+    </div>
+
+
+
+    <div class="div2">
+        <h1>Hello World!</h1>
+    </div>
+</body>
+</html>
